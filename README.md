@@ -1,4 +1,4 @@
-This repository contains a solution to the computer project 1 on page 119 of *Discrete Mathematics and Its Applications
+This repository contains a solution to computer project 1 on page 119 of *Discrete Mathematics and Its Applications
 <small>8th Edition</small>*
 
 Recommended IDE: [VS Code](https://code.visualstudio.com/)
