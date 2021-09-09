@@ -1,4 +1,4 @@
-import { conjoin, disjoin } from "./logical-operators.ts";
+import { conjoin, disjoin, exclusivelyDisjoin } from "./logical-operators.ts";
 
 const truthTableValues: [boolean, boolean][] = [
   [true, true],
@@ -18,3 +18,5 @@ function printTruthTable(operator: (p: boolean, q: boolean) => boolean, symbol: 
 printTruthTable(conjoin, "∧");
 console.log();
 printTruthTable(disjoin, "∨");
+console.log();
+printTruthTable(exclusivelyDisjoin, "⊕");

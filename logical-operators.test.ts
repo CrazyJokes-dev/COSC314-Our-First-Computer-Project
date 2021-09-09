@@ -1,6 +1,6 @@
 import { assertEquals } from "https://deno.land/std@0.106.0/testing/asserts.ts";
 
-import { conjoin, disjoin } from "./logical-operators.ts";
+import { conjoin, disjoin, exclusivelyDisjoin } from "./logical-operators.ts";
 
 Deno.test("conjoin()", () => {
   assertEquals(conjoin(true, true), true);
@@ -14,4 +14,11 @@ Deno.test("disjoin()", () => {
   assertEquals(disjoin(true, false), true);
   assertEquals(disjoin(false, true), true);
   assertEquals(disjoin(false, false), false);
+});
+
+Deno.test("exclusivelyDisjoin()", () => {
+  assertEquals(exclusivelyDisjoin(true, true), false);
+  assertEquals(exclusivelyDisjoin(true, false), true);
+  assertEquals(exclusivelyDisjoin(false, true), true);
+  assertEquals(exclusivelyDisjoin(false, false), false);
 });
