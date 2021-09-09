@@ -10,12 +10,12 @@ To run print results:
 deno run index.ts
 ```
 
-To run tests
+To run tests:
 ```
 deno test
 ```
 
-sample output
+sample output:
 ```
  p │ q ║ p∧q
 ───┼───╫─────
