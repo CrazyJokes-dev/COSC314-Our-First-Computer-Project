@@ -14,3 +14,41 @@ To run tests
 ```
 deno test
 ```
+
+sample output
+```
+ p │ q ║ p∧q
+───┼───╫─────
+ T │ T ║  T
+ T │ F ║  F
+ F │ T ║  F
+ F │ F ║  F
+
+ p │ q ║ p∨q
+───┼───╫─────
+ T │ T ║  T
+ T │ F ║  T
+ F │ T ║  T
+ F │ F ║  F
+
+ p │ q ║ p⊕q
+───┼───╫─────
+ T │ T ║  F
+ T │ F ║  T
+ F │ T ║  T
+ F │ F ║  F
+
+ p │ q ║ p⊃q
+───┼───╫─────
+ T │ T ║  T
+ T │ F ║  F
+ F │ T ║  T
+ F │ F ║  T
+
+ p │ q ║ p≡q
+───┼───╫─────
+ T │ T ║  T
+ T │ F ║  F
+ F │ T ║  F
+ F │ F ║  T
+ ```
