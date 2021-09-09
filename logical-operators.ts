@@ -13,3 +13,7 @@ export function exclusivelyDisjoin(p: boolean, q: boolean) {
 export function imply(p: boolean, q: boolean) {
   return !p || q;
 }
+
+export function equate(p: boolean, q: boolean) {
+  return p === q;
+}
