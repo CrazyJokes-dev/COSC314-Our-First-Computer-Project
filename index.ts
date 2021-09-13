@@ -7,6 +7,11 @@ const truthTableValues: [boolean, boolean][] = [
   [false, false],
 ];
 
+// I find it kind of cool how you made a function to print the outline
+// of the table in the way we would write it on paper.
+// Not only that but I like how you have more than just one program
+// in this repository. It looks like you did an excellent job!
+
 function printTruthTable(operator: (p: boolean, q: boolean) => boolean, symbol: string) {
   console.log(` p │ q ║ p${symbol}q`);
   console.log("───┼───╫─────");
